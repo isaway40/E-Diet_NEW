@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1039856561540",
+    "project_id": "e-health-ea23a",
+    "storage_bucket": "e-health-ea23a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039856561540:android:29659fe7e746e4709a81d1",
+        "android_client_info": {
+          "package_name": "com.example.e_dietdash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039856561540-g8a0mtqgk77evm094ch5sk9c600rfmj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZhNGYbtvimYn36wUWIbQxpr89Rhe-2h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039856561540-g8a0mtqgk77evm094ch5sk9c600rfmj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.account.SignupActivity"
+    android:background="@color/orange_300">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            app:cardElevation="24dp"
+            app:cardCornerRadius="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Daftarkan Diri Anda!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="36dp"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_800"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:text="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="36dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/profile_emails"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="36dp"
+                    android:padding="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_700"
+                    android:background="@drawable/custom_et"
+                    android:textSize="16sp"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_menu" />
+
+                <TextView
+                    android:text="Kata Sandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="36dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/profile_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="36dp"
+                    android:padding="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_700"
+                    android:background="@drawable/custom_et"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_menu" />
+
+                <TextView
+                    android:text="Konfirmasi Kata Sandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="36dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/profile_password_confirm"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="36dp"
+                    android:padding="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_700"
+                    android:background="@drawable/custom_et"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_menu" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="36dp"
+                    android:layout_marginVertical="36dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_back"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_btn_trans"
+                        android:backgroundTint="@color/blue_400"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0"
+                        android:paddingHorizontal="24dp"
+                        android:paddingTop="4dp"
+                        android:text="Kembali"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_400"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_register"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_btn"
+                        android:backgroundTint="@color/blue_400"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0"
+                        android:paddingHorizontal="24dp"
+                        android:paddingTop="4dp"
+                        android:text="Daftar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

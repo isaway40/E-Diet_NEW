@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">E-Diet DASH</string>
+    <string name="title_home">Utama</string>
+    <string name="title_education">Edukasi</string>
+    <string name="title_diet">Diet</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel diam accumsan dui.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="update">Update</string>
+    <string name="g2">Grade 2</string>
+    <string name="g3">Grade 3</string>
+    <string name="g1">Grade 1</string>
+    <string name="gN">Normal</string>
+    <string name="buah_golongan_a">Buah\nGolongan A</string>
+    <string name="buah_golongan_b">Buah\nGolongan B</string>
+    <string name="sayur">Sayur\nGolongan B</string>
+    <string name="sdfds">Sayur\nGolongan A</string>
+    <string name="daging">Sumber\nLemak</string>
+</resources>
