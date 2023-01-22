@@ -35,6 +35,8 @@ class QuestionActivity : AppCompatActivity() {
     val userId = user?.uid
     private var isEdit = false
     private lateinit var db: FirebaseFirestore
+    var grade = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -138,16 +140,14 @@ class QuestionActivity : AppCompatActivity() {
     }
 
     private fun createUser(strId: String?): Task<Void> {
-        var grade = 1
         val sisto = profile_sistolik.text.toString().toInt()
-        val diasto = profile_diastolik.text.toString().toInt()
-        if (sisto > 180 && diasto > 110){
+        if (sisto > 150){
             grade = 3
-        } else if (sisto > 160 && diasto > 105){
+        } else if (sisto >= 140){
             grade = 2
-        } else if (sisto > 150 && diasto > 95){
+        } else if (sisto >= 130){
             grade = 1
-        } else if (sisto > 120 && diasto > 80){
+        } else if (sisto <= 129){
             grade = 0
         }
         val writeBatch = mFirestore.batch()

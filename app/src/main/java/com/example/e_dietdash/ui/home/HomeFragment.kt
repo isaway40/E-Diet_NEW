@@ -95,7 +95,7 @@ class HomeFragment : Fragment() {
             }
             when (vie) {
                 "3" -> {
-                    Grade.text = "Grade 1"
+                    Grade.text = "Grade 3"
                 }
                 "2" -> {
                     Grade.text = "Grade 2"

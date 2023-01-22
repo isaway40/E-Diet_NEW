@@ -44,6 +44,13 @@ class GiziAdapter(query: Query) : FirestoreAdapter<GiziAdapter.GiziViewHolder>(q
             var gnat = 0
             gnat = gizi?.natrium!!
 
+            if (UserData.grad == "0") {
+                when {
+                    gnat < 1200 -> status_natrium.text = "kurang"
+                    gnat > 1400 -> status_natrium.text = "lebih"
+                    gnat in 1201..1399 -> status_natrium.text = "cukup"
+                }
+            }
             if (UserData.grad == "1") {
                when {
                    gnat < 1000 -> status_natrium.text = "kurang"
